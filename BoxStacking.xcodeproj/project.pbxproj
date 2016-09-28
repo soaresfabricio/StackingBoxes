@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7FABCAF31D9C1C77009BDC0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FABCAF21D9C1C77009BDC0D /* main.cpp */; };
-		7FABCAFB1D9C1CE4009BDC0D /* box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FABCAF91D9C1CE4009BDC0D /* box.cpp */; };
-		7FABCAFE1D9C1EDA009BDC0D /* stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FABCAFC1D9C1EDA009BDC0D /* stack.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +25,6 @@
 /* Begin PBXFileReference section */
 		7FABCAEF1D9C1C77009BDC0D /* BoxStacking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BoxStacking; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FABCAF21D9C1C77009BDC0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		7FABCAF91D9C1CE4009BDC0D /* box.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = box.cpp; path = ../box.cpp; sourceTree = "<group>"; };
-		7FABCAFA1D9C1CE4009BDC0D /* box.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = box.hpp; path = ../box.hpp; sourceTree = "<group>"; };
-		7FABCAFC1D9C1EDA009BDC0D /* stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stack.cpp; sourceTree = "<group>"; };
-		7FABCAFD1D9C1EDA009BDC0D /* stack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +57,6 @@
 		7FABCAF11D9C1C77009BDC0D /* BoxStacking */ = {
 			isa = PBXGroup;
 			children = (
-				7FABCAF91D9C1CE4009BDC0D /* box.cpp */,
-				7FABCAFA1D9C1CE4009BDC0D /* box.hpp */,
-				7FABCAFC1D9C1EDA009BDC0D /* stack.cpp */,
-				7FABCAFD1D9C1EDA009BDC0D /* stack.hpp */,
 				7FABCAF21D9C1C77009BDC0D /* main.cpp */,
 			);
 			path = BoxStacking;
@@ -130,8 +120,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FABCAF31D9C1C77009BDC0D /* main.cpp in Sources */,
-				7FABCAFE1D9C1EDA009BDC0D /* stack.cpp in Sources */,
-				7FABCAFB1D9C1CE4009BDC0D /* box.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +246,7 @@
 				7FABCAF81D9C1C77009BDC0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
