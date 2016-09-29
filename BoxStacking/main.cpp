@@ -87,10 +87,8 @@ int maiorTamanhoPilha(const std::vector<Caixa> & a, unsigned long n){
 int main() {
 
     int quantosTestes;
-    int quantasCaixas;
     
     std::cin >> quantosTestes;
-    std::cin >> quantasCaixas;
     
     //std::cout << quantosTestes << std::endl;
     //std::cout << quantasCaixas << std::endl;
@@ -103,6 +101,10 @@ int main() {
         
         a.clear();
         
+        int quantasCaixas;
+        std::cin >> quantasCaixas;
+
+        
         for (int i = 0; i < quantasCaixas; i++){
             std::vector<int> dimensoesCaixa;
             for(int i = 0; i < 3; i++){
@@ -114,7 +116,7 @@ int main() {
         }
 
         
-        std::cout << maiorTamanhoPilha(a, a.size());
+        std::cout << maiorTamanhoPilha(a, a.size()) << std::endl;
 
         
         --quantosTestes;
