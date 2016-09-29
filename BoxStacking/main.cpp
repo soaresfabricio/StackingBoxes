@@ -3,10 +3,12 @@
 //  BoxStacking
 //
 //  Created by Fabrício Soares on 28/09/16.
-//  Copyright © 2016 Fabrício Soares. All rights reserved.
+//  Copyright © 2016 Fabrício Soar  es. All rights reserved.
 //
 
 #include <iostream>
+#include <vector>
+#include <iterator>
 
 
 struct Caixa {
@@ -26,7 +28,7 @@ int compare(const void * a, const void * b){
 int max (int x, int y) { return (x > y) ? x : y; }
 int min (int x, int y) { return (x < y) ? x : y; }
 
-int maiorTamanhoPilha(Caixa a[], int n){
+int maiorTamanhoPilha(const std::vector<Caixa> & a, unsigned long n){
     
     Caixa rotacoes[3*n];
     int indice = 0;
@@ -82,12 +84,54 @@ int maiorTamanhoPilha(Caixa a[], int n){
 
 
 
-int main(int argc, const char * argv[]) {
+int main() {
 
-    Caixa a[] = { {4, 6, 7}, {1, 2, 3}, {4, 5, 6}, {10, 12, 32} };
-    int n = sizeof(a)/sizeof(a[0]);
+    int quantosTestes;
+    int quantasCaixas;
     
-    printf("The maximum possible height of stack is %d\n", maiorTamanhoPilha(a, n) );
+    std::cin >> quantosTestes;
+    std::cin >> quantasCaixas;
+    
+    //std::cout << quantosTestes << std::endl;
+    //std::cout << quantasCaixas << std::endl;
+
+
+    std::vector<Caixa> a;
+    
+    
+    while (quantosTestes > 0) {
+        
+        a.clear();
+        
+        for (int i = 0; i < quantasCaixas; i++){
+            std::vector<int> dimensoesCaixa;
+            for(int i = 0; i < 3; i++){
+                int tmp;
+                std::cin >> tmp;
+                dimensoesCaixa.push_back(tmp);
+            }
+            a.push_back({ dimensoesCaixa[0], dimensoesCaixa[1], dimensoesCaixa[2] } );
+        }
+
+        
+        std::cout << maiorTamanhoPilha(a, a.size());
+
+        
+        --quantosTestes;
+        
+    }
+    
+
+    
+//    a.push_back({ dimensoesCaixa[0], dimensoesCaixa[1], dimensoesCaixa[2] } );
+//    a.push_back({ 1, 2, 3} );
+//    a.push_back({ 4, 5, 6 } );
+//    a.push_back({ 10, 12, 32} );
+    
+    
+    //Caixa a[] = { {411, 110, 72}, {13, 204, 553}, {144, 12, 16}, {110, 12, 136} };
+    
+    //printf("%d", maiorTamanhoPilha(a, a.size()) );
     
     return 0;
 
