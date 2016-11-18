@@ -2,12 +2,12 @@ CXX=g++
 
 all: main
 
-main: main.cpp 
-		$(CXX) $(CXXFLAGS) main.cpp -std=c++11 -o boxstacking
-		
+main: main.cpp
+                $(CXX) $(CXXFLAGS) main.cpp -std=c++11 -o boxstacking
 
-test: 
-	./teste.sh entrada.in saida.out
+
+test:
+        ./testes.sh casos.entrada casos.saida
 
 clean:
-	rm boxstacking
+        rm boxstacking
