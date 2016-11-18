@@ -29,7 +29,7 @@ The number representing the maximum possible height of the stack made by the pro
 
 ### TESTING
 
-To test everything, you'll need run a :
+To test everything, you'll need to run a :
 
 	make test
 
