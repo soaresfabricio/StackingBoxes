@@ -7,7 +7,7 @@ main: main.cpp
 
 
 test:
-        ./testes.sh casos.entrada casos.saida
+        ./testes.sh casos.entrada casos.respostas
 
 clean:
         rm boxstacking
