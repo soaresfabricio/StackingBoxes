@@ -15,9 +15,9 @@ jobs:
     - name: make
       working-directory: BoxStacking
       run: make
-    - name: make tests
+    - name: make test
       working-directory: BoxStacking
-      run: make tests
+      run: make test
     - name: make check
       working-directory: BoxStacking
       run: make check
