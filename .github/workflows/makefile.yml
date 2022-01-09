@@ -12,15 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2    
-    - name: make
+    - name: Build
       working-directory: BoxStacking
       run: make
-    - name: make test
+    - name: Test
       working-directory: BoxStacking
       run: make test
-    - name: make check
-      working-directory: BoxStacking
-      run: make check
-    - name: make distcheck
-      working-directory: BoxStacking
-      run: make distcheck
