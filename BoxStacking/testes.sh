@@ -5,7 +5,7 @@
 
 echo "Realizando testes..."
 
-RESULTADO=$(gtimeout 20s ./boxstacking < $1)
+RESULTADO=$(timeout 20s ./boxstacking < $1)
 ## Obtém o resultado do último comando e verifica
 ## se o programa demorou mais que 30 segundos
 if [[ $? -eq 30 ]]; then
